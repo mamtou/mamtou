@@ -35,7 +35,7 @@ var app = {
     onDeviceReady: function() {
         //app.receivedEvent('deviceready');
         //window.open = cordova.InAppBrowser.open;
-        var ref = cordova.InAppBrowser.open('http://apache.org', '_self', 'location=yes');
+        var ref = cordova.InAppBrowser.open('http://apache.org', '_self', 'location=no');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
