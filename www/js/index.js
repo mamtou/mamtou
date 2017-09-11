@@ -34,7 +34,8 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         //app.receivedEvent('deviceready');
-        window.location.href = "http://m.qunhei.com";
+        //window.open = cordova.InAppBrowser.open;
+        var ref = cordova.InAppBrowser.open('http://apache.org', '_blank', 'location=yes');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
